@@ -1,2 +1,2 @@
-# Automation-RestAssured
-Automation project for API's with Rest Assured
+# API Automation with RestAssured in TDD
+API Automation project with Rest Assured in TDD style
