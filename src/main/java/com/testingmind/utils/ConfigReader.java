@@ -13,7 +13,7 @@ public class ConfigReader {
 	public static void load(String env) {
 		try {
 			String filePath = Constants.ENVIRONMENT_PROPERTY_FILE_PATH + env + ".properties";
-			System.out.println("path-load: " + filePath);
+			logger.warn("path-load: " + filePath);
 			FileInputStream fis = new FileInputStream(new File(filePath));			
 			properties.load(fis);
 		} catch (Exception e) {
@@ -21,8 +21,8 @@ public class ConfigReader {
 		}
 	}
 	public static String getProperty(String key) {
-		System.out.println("Path:" + key);
-		System.out.println("Path:" + properties.getProperty(key));
+		logger.warn("Key to read from properties: " + key);
+		logger.warn("Value to read from properties: " + properties.getProperty(key));
 		return properties.getProperty(key);
 	}
 

@@ -22,7 +22,6 @@ public class AuthClient extends BaseRequest{
 				.when()
 				.post(Endpoints.CREATE_TOKEN)
 				.then()
-				//.spec(ResponseSpecificationBuilder.get200ResponseSpecification())
 				.extract()
 				.response();
 		return response;

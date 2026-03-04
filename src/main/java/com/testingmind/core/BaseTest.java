@@ -19,10 +19,9 @@ public class BaseTest {
 	public static final Logger logger = LoggerWrapper.getLogger(BaseTest.class);
 		
 	@BeforeSuite(alwaysRun = true)
-	public void startReporter() {
+	public void initializeSuite() {
 		ExtentManager.initializeReporter();
 		ConfigReader.load("QA");
-		System.out.println("Test execution started.");
 		logger.info("Test execution started.");
 		logger.info("Reports and logs initialized.");
 	}

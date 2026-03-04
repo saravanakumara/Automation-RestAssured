@@ -10,5 +10,4 @@ public class AuthTokenResponse {
 	public void setToken(String token) {
 		this.token = token;
 	}
-
 }

@@ -16,6 +16,4 @@ public class CreateAuthToken {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
-
 }
